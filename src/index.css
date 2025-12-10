@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-editor-bg text-editor-text font-mono;
+  }
+
+  * {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .code-line {
+    @apply border-l-2 border-transparent hover:border-editor-keyword hover:bg-editor-line transition-all duration-200;
+  }
+
+  .file-tab {
+    @apply px-4 py-2 bg-editor-sidebar text-editor-text border-r border-editor-line cursor-pointer hover:bg-editor-line transition-colors;
+  }
+
+  .file-tab.active {
+    @apply bg-editor-bg border-t-2 border-t-editor-keyword;
+  }
+
+  .syntax-keyword {
+    @apply text-editor-keyword;
+  }
+
+  .syntax-string {
+    @apply text-editor-string;
+  }
+
+  .syntax-function {
+    @apply text-editor-function;
+  }
+
+  .syntax-variable {
+    @apply text-editor-variable;
+  }
+
+  .syntax-comment {
+    @apply text-editor-comment;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4e4e4e;
+}
