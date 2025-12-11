@@ -134,7 +134,7 @@ const Hero = () => {
               Tushar Tugnait
             </h1>
             <h3 className="text-2xl md:text-3xl text-gray-600 mb-8 font-light">
-              Full-Stack Developer & AI Engineer
+              Full-Stack Developer & AI/ML Engineer
             </h3>
             <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-2xl">
               I build scalable, cloud-based AI systems and enterprise solutions.

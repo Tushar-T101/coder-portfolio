@@ -247,7 +247,7 @@ const Contact = () => {
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}}
         transition={{ delay: 0.6, duration: 0.5 }}
-        className={`mt-12 text-center font-mono text-sm ${
+        className={`mt-30 text-center font-mono text-sm pb-4 ${
           viewMode === "coder" ? "text-gray-500" : "text-gray-400"
         }`}
       >

@@ -24,7 +24,7 @@ interface Developer {
 
 const aboutMe: Developer = {
   name: "Tushar Tugnait",
-  title: "Full-Stack Software Developer & AI Engineer",
+  title: "Full-Stack Software Developer & AI/ML Engineer",
   summary: \`
     Passionate about building scalable, cloud-based AI systems 
     that solve real-world problems. With 2+ years of experience, 

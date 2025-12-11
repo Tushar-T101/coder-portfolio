@@ -19,12 +19,12 @@ const AppContent = () => {
 
   return (
     <div
-      className={`flex min-h-screen pb-16 md:pb-0 transition-colors duration-300 ${
+      className={`flex h-screen overflow-hidden pb-16 md:pb-0 transition-colors duration-300 ${
         viewMode === "coder" ? "bg-editor-bg" : "bg-gray-50"
       }`}
     >
-      {/* VS Code-style Sidebar - Only in Coder Mode */}
-      {viewMode === "coder" && <Sidebar />}
+      {/* Sidebar - Visible in both modes */}
+      <Sidebar />
 
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col">
