@@ -4,7 +4,6 @@ interface SectionHeaderProps {
   emoji?: string;
   title: string;
   fileName?: string;
-  description?: string;
   coderTextColor?: string; // e.g., 'text-editor-keyword'
   className?: string;
 }
@@ -13,14 +12,13 @@ const SectionHeader = ({
   emoji,
   title,
   fileName,
-  description,
   coderTextColor = "text-editor-keyword",
   className = "",
 }: SectionHeaderProps) => {
   const { viewMode } = useViewMode();
 
   return (
-    <div className={`mb-12 ${className}`}>
+    <div className={`mb-8 ${className}`}>
       {viewMode === "coder" ? (
         <>
           <div className="flex items-center gap-2 mb-6">
@@ -29,11 +27,6 @@ const SectionHeader = ({
               {fileName || title}
             </h2>
           </div>
-          {description && (
-            <p className="text-editor-comment mb-8 font-mono">
-              // {description}
-            </p>
-          )}
         </>
       ) : (
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">

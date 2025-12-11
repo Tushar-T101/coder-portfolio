@@ -17,40 +17,47 @@ const Projects = () => {
       title: "NaviFlow",
       company: "Navikenz",
       description:
-        "No-code/low-code AI platform simplifying GenAI for businesses",
+        "No-code/low-code AI platform simplifying GenAI solution creating for non-technical users",
       impact: [
         "Reduced solution creation time by 85%",
         "Enterprise-grade reliability",
         "Democratized AI usage",
       ],
-      techStack: ["Python", "Flask", "React", "LangChain", "AWS"],
+      techStack: [
+        "Python",
+        "Flask",
+        "AWS",
+        "LangChain",
+        "Langgraph",
+        "Lambda",
+        "DevOPS",
+        "TypeScript",
+      ],
       icon: "🤖",
       color: "border-blue-500",
     },
     {
       title: "Flowise Integration",
       company: "Johnson & Johnson",
-      description: "Integrated Visual LLM builder into enterprise AMP platform",
+      description:
+        "Integrated Visual Agent Builder into JnJ enterprise AMP platform",
       impact: [
         "Enabled rapid prototyping",
         "Streamlined AI workflows",
         "Enhanced team productivity",
       ],
-      techStack: ["Node.js", "React", "Flowise", "Docker"],
+      techStack: ["AWS", "Jenkins", "TypeScript", "Prisma ORM", "Graphql"],
       icon: "🔄",
       color: "border-green-500",
     },
     {
-      title: "Sales Coach Agent",
-      company: "Pfizer",
-      description: "AI-powered voice agent for sales training and feedback",
-      impact: [
-        "Real-time feedback loop",
-        "Improved sales pitch quality",
-        "Automated scoring system",
-      ],
-      techStack: ["Python", "OpenAI", "FastAPI", "React"],
-      icon: "🎙️",
+      title: "NectarBot",
+      company: "Navikenz",
+      description:
+        "RAG-based system on Amazon Bedrock processing 10K+ docs/day for summarization and sentiment analysis, boosting productivity by 70%",
+      impact: ["Boosted productivity by 70%", "Company-wide adoption"],
+      techStack: ["Python", "AWS Bedrock", "AWS S3", "FastAPI", "React", "Git"],
+      icon: "📃",
       color: "border-orange-500",
     },
     {
@@ -63,8 +70,29 @@ const Projects = () => {
         "Real-time view switching",
         "Responsive design",
       ],
-      techStack: ["React", "TypeScript", "TailwindCSS", "Framer Motion"],
+      techStack: ["React", "TypeScript", "TailwindCSS", "Framer Motion", "Git"],
       icon: "⚡",
+      color: "border-yellow-500/50",
+    },
+    {
+      title: "Football Video Analysis System",
+      company: "Personal Project",
+      description:
+        "A system to analyze football match videos using OpenCV and clustering algorithms for tactical insights",
+      impact: [
+        "Game like clear visualizations",
+        "Enhanced coach-view decision making",
+      ],
+      techStack: [
+        "Python",
+        "OpenCV",
+        "Scikit-learn",
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn",
+      ],
+      icon: "⚽",
       color: "border-yellow-500/50",
     },
   ];
@@ -78,7 +106,6 @@ const Projects = () => {
         emoji="💼"
         title="Featured Projects"
         fileName="Projects.tsx"
-        description="Showcasing impactful projects with measurable results"
         coderTextColor="text-editor-variable"
       />
 

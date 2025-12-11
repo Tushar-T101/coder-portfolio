@@ -38,7 +38,6 @@ const Contact = () => {
         emoji="📬"
         title="Get In Touch"
         fileName="Contact.tsx"
-        description="Let's build something amazing together"
         coderTextColor="text-editor-variable"
       />
 

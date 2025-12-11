@@ -14,8 +14,8 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: "Languages",
-      skills: ["Python", "JavaScript", "TypeScript", "SQL", "C++", "Java"],
+      title: "Programming Languages",
+      skills: ["Python", "JavaScript", "TypeScript", "C", "C++"],
       icon: "💻",
       color: "border-blue-500",
     },
@@ -34,7 +34,15 @@ const Skills = () => {
     },
     {
       title: "Backend & Cloud",
-      skills: ["Node.js", "Flask", "FastAPI", "AWS", "Firebase", "Docker"],
+      skills: [
+        "Node.js",
+        "Flask",
+        "RestAPI",
+        "GraphQL",
+        "Docker",
+        "AWS (Bedrock, S3, Lambda, EC2, RDS)",
+        "Firebase",
+      ],
       icon: "☁️",
       color: "border-green-500",
     },
@@ -43,10 +51,11 @@ const Skills = () => {
       skills: [
         "TensorFlow",
         "PyTorch",
+        "Scikit-learn",
         "OpenAI API",
         "LangChain",
         "RAG",
-        "Computer Vision",
+        "OpenCV",
       ],
       icon: "🤖",
       color: "border-orange-500",

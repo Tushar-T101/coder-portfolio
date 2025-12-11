@@ -28,12 +28,12 @@ const aboutMe: Developer = {
   summary: \`
     Passionate about building scalable, cloud-based AI systems 
     that solve real-world problems. With 2+ years of experience, 
-    I've delivered GenAI solutions for Fortune 500 companies 
-    including Johnson & Johnson, Air India, and Pfizer.
+    I've delivered GenAI solutions for Navikenz and Johnson & Johnson.
     
-    I specialize in creating no-code/low-code platforms that 
-    democratize AI, making it accessible to non-technical users 
-    while maintaining enterprise-grade reliability and performance.
+    I specialize in creating no-code/low-code Agentic AI platforms that reduced manual work by 80 %, 
+    improved business solution creation efficiency by 85 %, and lowered cloud costs by 25 %. 
+    Skilled in Python, REST APIs, AWS Services, SQL, Prisma ORM, React, RAG architectures and Frontend 
+    Technologies for building scalable, production-ready AI and web applications.
   \`,
   expertise: [
     "GenAI & RAG Architectures",
@@ -87,13 +87,15 @@ export default aboutMe;`;
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               Passionate about building scalable, cloud-based AI systems that
               solve real-world problems. With 2+ years of experience, I've
-              delivered GenAI solutions for Fortune 500 companies including
-              Johnson & Johnson, Air India, and Pfizer.
+              delivered GenAI solutions for Navikenz and Johnson & Johnson.
             </p>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              I specialize in creating no-code/low-code platforms that
-              democratize AI, making it accessible to non-technical users while
-              maintaining enterprise-grade reliability and performance.
+              I specialize in creating no-code/low-code platforms that reduced
+              manual work by 80 %, improved business solution creation
+              efficiency by 85 %, and lowered cloud costs by 25 %. Skilled in
+              Python, REST APIs, AWS Services, SQL, Prisma ORM, React, RAG
+              architectures and Frontend Technologies for building scalable,
+              production-ready AI and web applications.
             </p>
 
             <div className="space-y-3">
@@ -102,6 +104,7 @@ export default aboutMe;`;
                 "Cloud Infrastructure (AWS)",
                 "Full-Stack Development",
                 "System Design & Scalability",
+                "API Development & Integration",
               ].map((item) => (
                 <div
                   key={item}
@@ -129,7 +132,7 @@ export default aboutMe;`;
                 </div>
                 <div>
                   <div className="text-4xl font-bold text-blue-600 mb-1">
-                    100+
+                    50+
                   </div>
                   <div className="text-sm text-gray-500">
                     AI Agents Deployed
@@ -162,7 +165,7 @@ export default aboutMe;`;
             <div className="text-sm text-gray-400 mt-2">Years Experience</div>
           </div>
           <div className="bg-editor-sidebar p-6 rounded-lg border border-editor-line hover:border-editor-keyword transition-colors">
-            <div className="text-3xl font-bold text-editor-string">100+</div>
+            <div className="text-3xl font-bold text-editor-string">50+</div>
             <div className="text-sm text-gray-400 mt-2">AI Agents Deployed</div>
           </div>
           <div className="bg-editor-sidebar p-6 rounded-lg border border-editor-line hover:border-editor-keyword transition-colors">

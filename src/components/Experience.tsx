@@ -20,15 +20,15 @@ const Experience = () => {
       "company": "Navikenz",
       "role": "Software Developer",
       "period": "Jan 2024 - Present",
-      "location": "Remote",
+      "location": "Noida, India",
       "achievements": [
-        "Integrated Flowise into AMP platform for Johnson & Johnson",
+        "Integrated Flowise into AMP platform for Johnson & Johnson and handled other API tasks",
         "Developed NaviFlow: no-code/low-code AI platform",
         "Led technical discussions with J&J, Air India, and Pfizer",
         "Optimized AWS deployment pipelines, reducing costs by 25%",
         "Reduced business solution creation time by 85%"
       ],
-      "techStack": ["Python", "Flask", "AWS", "LangChain", "Langgraph", "Lambda"],
+      "techStack": ["Python", "Flask", "AWS", "LangChain", "Langgraph", "Lambda", "DevOPS", "TypeScript", "Prisma ORM", "Graphql"],
       "impact": {
         "efficiency": "+85%",
         "costReduction": "-25%",
@@ -61,13 +61,24 @@ const Experience = () => {
       role: "Software Developer",
       period: "Jan 2024 - Present",
       achievements: [
-        "Integrated Flowise into AMP platform for Johnson & Johnson",
+        "Integrated Flowise into AMP platform for Johnson & Johnson and handled other API tasks",
         "Developed NaviFlow: no-code/low-code AI platform",
         "Led technical discussions with J&J, Air India, and Pfizer",
         "Optimized AWS deployment pipelines, reducing costs by 25%",
         "Reduced business solution creation time by 85%",
       ],
-      techStack: ["Python", "Flask", "AWS", "LangChain", "Langgraph", "Lambda"],
+      techStack: [
+        "Python",
+        "Flask",
+        "AWS",
+        "LangChain",
+        "Langgraph",
+        "Lambda",
+        "DevOPS",
+        "TypeScript",
+        "Prisma ORM",
+        "Graphql",
+      ],
     },
     {
       company: "Incubit GBS Pvt. Ltd.",
@@ -154,11 +165,20 @@ const Experience = () => {
                     </div>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    {["Python", "Flask", "AWS", "LangChain", "Lambda"].map(
-                      (tech) => (
-                        <TechBadge key={tech} tech={tech} />
-                      )
-                    )}
+                    {[
+                      "Python",
+                      "Flask",
+                      "AWS",
+                      "LangChain",
+                      "Langgraph",
+                      "Lambda",
+                      "DevOPS",
+                      "TypeScript",
+                      "Prisma ORM",
+                      "Graphql",
+                    ].map((tech) => (
+                      <TechBadge key={tech} tech={tech} />
+                    ))}
                   </div>
                 </div>
               </div>

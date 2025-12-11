@@ -18,7 +18,7 @@ const Hero = () => {
   role: "Full-Stack Developer | AI/ML Engineer",
   location: "Noida, India",
   experience: "2+ years",
-  specialization: ["GenAI", "Cloud Architecture", "Scalable Systems"],
+  specialization: ["GenAI", "Cloud Architecture", "Agentic AI Architecture"],
   impact: {
     efficiency: "+85%",
     costReduction: "-25%",
@@ -139,8 +139,8 @@ const Hero = () => {
             <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-2xl">
               I build scalable, cloud-based AI systems and enterprise solutions.
               Specializing in Generative AI, Cloud Architecture, and creating
-              tools that bridge the gap between complex technology and user
-              needs.
+              tools that reduce manual work, improve business solution creation
+              efficiency, and lower cloud costs.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-12">

@@ -22,7 +22,6 @@ const Publications = () => {
         emoji="📝"
         title="Research & Education"
         fileName="Publications.md"
-        description="Research & Academic Contributions"
         coderTextColor="text-editor-string"
       />
 
@@ -110,7 +109,7 @@ const Publications = () => {
 
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="#"
+                  href="https://ieeexplore.ieee.org/document/10428670"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`flex items-center gap-2 px-4 py-2 rounded transition-colors font-mono text-sm ${
@@ -149,60 +148,89 @@ const Publications = () => {
             coderTextColor="text-editor-keyword"
           />
 
-          <div
-            className={`p-6 rounded-lg border ${
-              viewMode === "coder"
-                ? "bg-editor-sidebar border-editor-line"
-                : "bg-white border-gray-200 shadow-sm"
-            }`}
-          >
-            <div className="flex items-start justify-between flex-wrap gap-4">
-              <div>
-                <h4
-                  className={`text-lg font-bold ${
-                    viewMode === "coder"
-                      ? "text-editor-function"
-                      : "text-gray-900"
-                  }`}
-                >
-                  B.Tech (CSE) with Honours in AI/ML
-                </h4>
-                <p
-                  className={
-                    viewMode === "coder"
-                      ? "text-editor-keyword"
-                      : "text-blue-600 font-medium"
-                  }
-                >
-                  Amity University, Noida
-                </p>
-                <p
-                  className={`text-sm mt-1 ${
-                    viewMode === "coder" ? "text-gray-400" : "text-gray-500"
-                  }`}
-                >
-                  Noida, Uttar Pradesh
-                </p>
-              </div>
-              <div className="text-right">
-                <div
-                  className={`text-2xl font-bold ${
-                    viewMode === "coder"
-                      ? "text-editor-string"
-                      : "text-gray-900"
-                  }`}
-                >
-                  8.32 CGPA
+          <div className="space-y-4">
+            {[
+              {
+                degree: "B.Tech (CSE) with Honours in AI/ML",
+                institution: "Amity University, Noida",
+                location: "Noida, Uttar Pradesh",
+                year: "2024",
+                score: "8.32 CGPA",
+              },
+              {
+                degree: "Grade XII",
+                institution:
+                  "G.D. Goenka Public School, Indirapuram, Ghaziabad",
+                location: "CBSE Board",
+                year: "2020",
+                score: "89.2%",
+              },
+              {
+                degree: "Grade X",
+                institution:
+                  "G.D. Goenka Public School, Indirapuram, Ghaziabad",
+                location: "CBSE Board",
+                year: "2018",
+                score: "88.2%",
+              },
+            ].map((edu, index) => (
+              <div
+                key={index}
+                className={`p-6 rounded-lg border transition-all ${
+                  viewMode === "coder"
+                    ? "bg-editor-sidebar border-editor-line hover:border-editor-keyword"
+                    : "bg-white border-gray-200 shadow-sm hover:shadow-md"
+                }`}
+              >
+                <div className="flex items-start justify-between flex-wrap gap-4">
+                  <div>
+                    <h4
+                      className={`text-lg font-bold ${
+                        viewMode === "coder"
+                          ? "text-editor-function"
+                          : "text-gray-900"
+                      }`}
+                    >
+                      {edu.degree}
+                    </h4>
+                    <p
+                      className={
+                        viewMode === "coder"
+                          ? "text-editor-keyword"
+                          : "text-blue-600 font-medium"
+                      }
+                    >
+                      {edu.institution}
+                    </p>
+                    <p
+                      className={`text-sm mt-1 ${
+                        viewMode === "coder" ? "text-gray-400" : "text-gray-500"
+                      }`}
+                    >
+                      {edu.location}
+                    </p>
+                  </div>
+                  <div className="text-right">
+                    <div
+                      className={`text-2xl font-bold ${
+                        viewMode === "coder"
+                          ? "text-editor-string"
+                          : "text-gray-900"
+                      }`}
+                    >
+                      {edu.score}
+                    </div>
+                    <div
+                      className={`text-sm ${
+                        viewMode === "coder" ? "text-gray-400" : "text-gray-500"
+                      }`}
+                    >
+                      {edu.year}
+                    </div>
+                  </div>
                 </div>
-                <div
-                  className={`text-sm ${
-                    viewMode === "coder" ? "text-gray-400" : "text-gray-500"
-                  }`}
-                >
-                  Graduated: 2024
-                </div>
               </div>
-            </div>
+            ))}
           </div>
         </motion.div>
       </div>
