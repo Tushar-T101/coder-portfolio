@@ -3,6 +3,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Certifications from "./components/Certifications";
 import Publications from "./components/Publications";
 import Contact from "./components/Contact";
 import Sidebar from "./components/Sidebar";
@@ -37,6 +38,7 @@ const AppContent = () => {
               { name: "Experience.json", id: "experience", icon: "○" },
               { name: "Projects.tsx", id: "projects", icon: "○" },
               { name: "Skills.tsx", id: "skills", icon: "○" },
+              { name: "Certifications.ts", id: "certifications", icon: "○" },
               { name: "Publications.md", id: "publications", icon: "○" },
               { name: "Contact.js", id: "contact", icon: "○" },
             ].map((tab) => (
@@ -71,6 +73,7 @@ const AppContent = () => {
           <Experience />
           <Projects />
           <Skills />
+          <Certifications />
           <Publications />
           <Contact />
         </main>

@@ -95,6 +95,20 @@ const Projects = () => {
       icon: "⚽",
       color: "border-yellow-500/50",
     },
+    {
+      title: "J.A.R.V.I.S. AI Assistant",
+      company: "Personal Project",
+      description:
+        "Voice-based AI assistant with facial authentication and OpenAI-powered responses for coding and general queries, achieving <2s latency",
+      impact: [
+        "Sub-2 second response latency",
+        "Facial authentication security",
+        "IEEE Research Paper Published",
+      ],
+      techStack: ["Python", "OpenAI API", "OpenCV", "SpeechRecognition"],
+      icon: "🤖",
+      color: "border-purple-500",
+    },
   ];
 
   return (
@@ -122,7 +136,7 @@ const Projects = () => {
                     project.color
                   } hover:shadow-lg hover:shadow-${project.color.replace(
                     "/50",
-                    ""
+                    "",
                   )}/20`
                 : "bg-white shadow-md hover:shadow-xl border border-gray-100"
             }`}

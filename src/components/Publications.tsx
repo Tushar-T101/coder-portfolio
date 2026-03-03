@@ -124,8 +124,12 @@ const Publications = () => {
                 <div className="flex flex-wrap gap-2">
                   {["AI/ML", "Computer Vision", "NLP", "Biometric Auth"].map(
                     (tag) => (
-                      <TechBadge key={tag} tech={tag} />
-                    )
+                      <TechBadge
+                        key={tag}
+                        tech={tag}
+                        className="text-center align-middle"
+                      />
+                    ),
                   )}
                 </div>
               </div>

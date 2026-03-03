@@ -14,6 +14,7 @@ import {
   FaBriefcase,
   FaCode,
   FaTools,
+  FaCertificate,
   FaGraduationCap,
   FaEnvelope,
 } from "react-icons/fa";
@@ -36,6 +37,7 @@ const Sidebar = () => {
     { Icon: FaBriefcase, label: "Experience", id: "experience" },
     { Icon: FaCode, label: "Projects", id: "projects" },
     { Icon: FaTools, label: "Skills", id: "skills" },
+    { Icon: FaCertificate, label: "Certifications", id: "certifications" },
     { Icon: FaGraduationCap, label: "Education", id: "publications" },
     { Icon: FaEnvelope, label: "Contact", id: "contact" },
   ];

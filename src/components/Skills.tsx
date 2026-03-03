@@ -15,46 +15,65 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
-      skills: ["Python", "JavaScript", "TypeScript", "C", "C++"],
+      skills: ["Python", "JavaScript (ES6+)", "TypeScript", "C/C++"],
       icon: "💻",
       color: "border-blue-500",
     },
     {
       title: "Frontend",
       skills: [
-        "React",
-        "Next.js",
+        "React.js",
+        "HTML5",
+        "CSS3 (Flexbox/Grid)",
+        "Vite",
         "TailwindCSS",
         "Framer Motion",
-        "HTML5",
-        "CSS3",
       ],
       icon: "🎨",
       color: "border-purple-500",
     },
     {
-      title: "Backend & Cloud",
+      title: "Backend & Tools",
       skills: [
-        "Node.js",
         "Flask",
-        "RestAPI",
-        "GraphQL",
+        "REST APIs",
+        "GraphQL (Apollo)",
+        "LangChain",
         "Docker",
-        "AWS (Bedrock, S3, Lambda, EC2, RDS)",
-        "Firebase",
+        "Git",
+      ],
+      icon: "⚙️",
+      color: "border-green-500",
+    },
+    {
+      title: "Database",
+      skills: ["PostgreSQL", "MySQL", "Prisma ORM", "Firebase"],
+      icon: "🗄️",
+      color: "border-cyan-500",
+    },
+    {
+      title: "Cloud & AWS",
+      skills: [
+        "AWS Bedrock",
+        "AWS SageMaker",
+        "AWS S3",
+        "AWS Lambda",
+        "AWS EC2",
+        "AWS RDS",
+        "PowerBI",
       ],
       icon: "☁️",
-      color: "border-green-500",
+      color: "border-yellow-500",
     },
     {
       title: "AI & ML",
       skills: [
-        "TensorFlow",
-        "PyTorch",
-        "Scikit-learn",
-        "OpenAI API",
+        "Generative AI",
+        "Foundation Models",
+        "Responsible AI",
         "LangChain",
         "RAG",
+        "Scikit-learn",
         "OpenCV",
       ],
       icon: "🤖",
@@ -74,7 +93,10 @@ const Skills = () => {
         coderTextColor="text-editor-function"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8" ref={inViewRef}>
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        ref={inViewRef}
+      >
         {skillCategories.map((category, index) => (
           <motion.div
             key={category.title}
@@ -87,7 +109,7 @@ const Skills = () => {
                     category.color
                   } hover:shadow-lg hover:shadow-${category.color.replace(
                     "border-",
-                    ""
+                    "",
                   )}/20`
                 : "bg-white border border-gray-100 shadow-sm hover:shadow-md"
             }`}

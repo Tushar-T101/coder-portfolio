@@ -254,7 +254,7 @@ const Contact = () => {
           {viewMode === "coder" ? "// " : ""}Built with React, TypeScript,
           TailwindCSS & Framer Motion
         </p>
-        <p className="mt-2">© 2024 Tushar Tugnait. All rights reserved.</p>
+        <p className="mt-2">© 2025 Tushar Tugnait. All rights reserved.</p>
       </motion.div>
     </SectionWrapper>
   );

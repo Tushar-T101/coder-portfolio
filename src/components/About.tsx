@@ -19,26 +19,30 @@ interface Developer {
   name: string;
   title: string;
   summary: string;
+  certification: string;
   expertise: string[];
 }
 
 const aboutMe: Developer = {
   name: "Tushar Tugnait",
-  title: "Full-Stack Software Developer & AI/ML Engineer",
+  title: "Software Developer & AI Engineer",
   summary: \`
-    Passionate about building scalable, cloud-based AI systems 
-    that solve real-world problems. With 2+ years of experience, 
-    I've delivered GenAI solutions for Navikenz and Johnson & Johnson.
+    Software Developer and AI Engineer with 2+ years of experience 
+    building scalable, cloud-based AI systems. Delivered no-code/low-code 
+    AI Agent Building platforms and GenAI solutions that reduced manual 
+    work by 80%, improved business solution creation efficiency by 85%,
+    and lowered cloud costs by 25%.
     
-    I specialize in creating no-code/low-code Agentic AI platforms that reduced manual work by 80 %, 
-    improved business solution creation efficiency by 85 %, and lowered cloud costs by 25 %. 
-    Skilled in Python, REST APIs, AWS Services, SQL, Prisma ORM, React, RAG architectures and Frontend 
-    Technologies for building scalable, production-ready AI and web applications.
+    Skilled in Python, REST APIs, AWS, SQL, Prisma ORM, React, RAG 
+    architectures and Frontend Technologies for building scalable, 
+    production-ready AI and web applications.
   \`,
+  certification: "AWS Certified AI Practitioner (AIF-C01) - Score: 929/1000",
   expertise: [
     "GenAI & RAG Architectures",
     "Cloud Infrastructure (AWS)",
     "Full-Stack Development",
+    "Distributed Systems",
     "System Design & Scalability",
     "API Development & Integration"
   ]
@@ -85,15 +89,14 @@ export default aboutMe;`;
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Passionate about building scalable, cloud-based AI systems that
-              solve real-world problems. With 2+ years of experience, I've
-              delivered GenAI solutions for Navikenz and Johnson & Johnson.
+              Software Developer and AI Engineer with 2+ years of experience
+              building scalable, cloud-based AI systems. Delivered
+              no-code/low-code AI Agent Building platforms and GenAI solutions
+              that reduced manual work by 80%, improved business solution
+              creation efficiency by 85%, and lowered cloud costs by 25%.
             </p>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              I specialize in creating no-code/low-code platforms that reduced
-              manual work by 80 %, improved business solution creation
-              efficiency by 85 %, and lowered cloud costs by 25 %. Skilled in
-              Python, REST APIs, AWS Services, SQL, Prisma ORM, React, RAG
+              Skilled in Python, REST APIs, AWS, SQL, Prisma ORM, React, RAG
               architectures and Frontend Technologies for building scalable,
               production-ready AI and web applications.
             </p>
@@ -103,6 +106,7 @@ export default aboutMe;`;
                 "GenAI & RAG Architectures",
                 "Cloud Infrastructure (AWS)",
                 "Full-Stack Development",
+                "Distributed Systems",
                 "System Design & Scalability",
                 "API Development & Integration",
               ].map((item) => (

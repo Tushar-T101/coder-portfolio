@@ -6,6 +6,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaPhone,
+  FaAws,
 } from "react-icons/fa";
 import { useViewMode } from "../context/ViewContext";
 import SectionWrapper from "./common/SectionWrapper";
@@ -15,10 +16,11 @@ const Hero = () => {
   const [displayedText, setDisplayedText] = useState("");
   const fullText = `const developer = {
   name: "Tushar Tugnait",
-  role: "Full-Stack Developer | AI/ML Engineer",
+  role: "Software Developer | AI/ML Engineer",
   location: "Noida, India",
   experience: "2+ years",
-  specialization: ["GenAI", "Cloud Architecture", "Agentic AI Architecture"],
+  certification: "AWS Certified AI Practitioner (929/1000)",
+  specialization: ["GenAI", "Cloud Architecture", "Agentic AI", "Distributed Systems"],
   impact: {
     efficiency: "+85%",
     costReduction: "-25%",
@@ -133,9 +135,21 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
               Tushar Tugnait
             </h1>
-            <h3 className="text-2xl md:text-3xl text-gray-600 mb-8 font-light">
-              Full-Stack Developer & AI/ML Engineer
+            <h3 className="text-2xl md:text-3xl text-gray-600 mb-6 font-light">
+              Software Developer | AI/ML | Full-Stack | Distributed Systems
             </h3>
+
+            {/* AWS Certification Badge */}
+            <div className="flex items-center gap-3 mb-8 px-4 py-2.5 bg-gradient-to-r from-[#232F3E]/5 to-transparent border border-[#FF9900]/20 rounded-full w-fit">
+              <FaAws className="text-[#FF9900]" size={22} />
+              <span className="text-sm font-medium text-gray-700">
+                AWS Certified AI Practitioner
+              </span>
+              <span className="px-2 py-0.5 text-xs font-bold bg-green-100 text-green-700 rounded-full">
+                929/1000
+              </span>
+            </div>
+
             <p className="text-lg text-gray-600 mb-10 leading-relaxed max-w-2xl">
               I build scalable, cloud-based AI systems and enterprise solutions.
               Specializing in Generative AI, Cloud Architecture, and creating
